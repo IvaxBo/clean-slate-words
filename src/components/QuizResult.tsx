@@ -23,16 +23,11 @@ export function QuizResult({ score, total, onRetry }: QuizResultProps) {
       <p className="text-6xl font-extrabold text-foreground mb-2">{score}/{total}</p>
       <p className="text-muted-foreground font-medium mb-8">{percentage}% Correct</p>
 
+      <p className="text-lg font-semibold text-foreground mb-4">
+        💪 Keep practicing!
+      </p>
+
       <div className="w-full max-w-xs space-y-3">
-        <Button
-          variant="outline"
-          size="full"
-          onClick={onRetry}
-          className="gap-2"
-        >
-          <span>💪</span>
-          Keep practicing!
-        </Button>
         <Button
           size="full"
           onClick={onRetry}
