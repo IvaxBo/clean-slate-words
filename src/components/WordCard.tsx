@@ -1,5 +1,4 @@
 import { ChevronRight } from "lucide-react";
-
 interface WordCardProps {
   sourceWord: string;
   translation: string;
@@ -7,13 +6,14 @@ interface WordCardProps {
   targetLanguage: string;
   onClick?: () => void;
 }
-
-export function WordCard({ sourceWord, translation, sourceLanguage, targetLanguage, onClick }: WordCardProps) {
-  return (
-    <button
-      onClick={onClick}
-      className="w-full bg-background border-2 border-border rounded-2xl p-4 flex items-center justify-between hover:border-foreground transition-all duration-200 active:scale-[0.99]"
-    >
+export function WordCard({
+  sourceWord,
+  translation,
+  sourceLanguage,
+  targetLanguage,
+  onClick
+}: WordCardProps) {
+  return <button onClick={onClick} className="w-full bg-background border-2 rounded-2xl p-4 flex items-center justify-between transition-all duration-200 active:scale-[0.99] border-primary">
       <div className="text-left">
         <div className="inline-flex items-center gap-1 px-2 py-1 bg-secondary rounded-full text-xs font-semibold text-foreground mb-2">
           <span>{sourceLanguage}</span>
@@ -24,6 +24,5 @@ export function WordCard({ sourceWord, translation, sourceLanguage, targetLangua
         <p className="text-sm text-muted-foreground font-medium">{translation}</p>
       </div>
       <ChevronRight className="h-5 w-5 text-muted-foreground" />
-    </button>
-  );
+    </button>;
 }
