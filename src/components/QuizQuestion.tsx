@@ -67,7 +67,7 @@ export function QuizQuestion({
             )}
             style={{ animationDelay: `${index * 0.05}s` }}
           >
-            <span className="pl-2">{option}</span>
+            <span className="pl-4">{option}</span>
             {hasAnswered && option === correctAnswer && (
               <Check className="h-5 w-5" />
             )}
