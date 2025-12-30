@@ -50,7 +50,12 @@ const Settings = () => {
 
           <section>
             
-            <Button variant="outline" size="full" className="text-destructive border-destructive hover:bg-destructive/10">
+            <Button 
+              variant="outline" 
+              size="full" 
+              className="text-destructive border-destructive hover:bg-destructive/10"
+              onClick={() => navigate('/login')}
+            >
               <LogOut className="h-5 w-5" />
               Sign Out
             </Button>
