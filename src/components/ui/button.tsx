@@ -16,7 +16,7 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        quiz: "border-2 border-border bg-background text-foreground hover:border-foreground",
+        quiz: "border-2 border-foreground bg-background text-foreground hover:border-foreground",
         quizCorrect: "border-2 border-success bg-success/10 text-success",
         quizIncorrect: "border-2 border-destructive bg-destructive/10 text-destructive",
       },
