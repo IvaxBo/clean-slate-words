@@ -48,7 +48,7 @@ const Quiz = () => {
         <div className="max-w-md mx-auto px-5 pt-8">
           <header className="flex items-center mb-6">
             <button
-              onClick={() => navigate(-1)}
+              onClick={() => navigate("/")}
               className="h-10 w-10 flex items-center justify-center"
             >
               <ArrowLeft className="h-6 w-6 text-foreground" />
@@ -63,12 +63,9 @@ const Quiz = () => {
             <h2 className="text-2xl font-bold text-foreground mb-2">
               No Words Yet
             </h2>
-            <p className="text-muted-foreground mb-8 max-w-xs">
+            <p className="text-muted-foreground max-w-xs">
               Add some words to your list first, then come back to test your knowledge!
             </p>
-            <Button onClick={() => navigate("/list")} className="px-8">
-              Add Words
-            </Button>
           </div>
         </div>
         <BottomNav />
